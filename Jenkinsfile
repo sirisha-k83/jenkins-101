@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-        pollSCM 'https://github.com/sirisha-k83/jenkins-101'
+        pollSCM 'https://github.com/sirisha-k83/jenkins-101/'
     }
     stages {
         stage('Build') {
