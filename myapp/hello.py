@@ -1,4 +1,4 @@
-import fire
+fire==0.4.0
 
 def hello(name="World"):
   return "Hello %s!" % name
