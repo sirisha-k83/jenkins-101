@@ -11,8 +11,9 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                sudo pip install -r requirements.txt
-                '''
+                docker exec -u 0 jenkins-blueocean apt update
+              docker exec -u 0 jenkins-blueocean apt install python3-pip -y
+              '''
             }
         }
         stage('Test') {
