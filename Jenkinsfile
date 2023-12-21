@@ -1,7 +1,7 @@
 pipeline {
- agent { label 'master' }
+ agent any
     triggers {
-        pollSCM 'https://github.com/sirisha-k83/jenkins-101/'
+        pollSCM '*/5 * * * *'
     }
     stages {
         stage('Build') {
