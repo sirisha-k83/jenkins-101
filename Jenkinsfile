@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' }
+ agent { label 'master' }
     triggers {
         pollSCM 'https://github.com/sirisha-k83/jenkins-101/'
     }
