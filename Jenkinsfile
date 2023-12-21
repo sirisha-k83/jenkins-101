@@ -7,11 +7,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building.."
-                sh '''
-                cd myapp
-                docker exec -u 0 apt update
-              docker exec -u 0 apt install python3-pip -y
-              '''
             }
         }
         stage('Test') {
